@@ -1,81 +1,42 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oto Yıkama | Hızlı Seçim ve Randevu</title>
+    <title>Net Bakım | Hızlı Randevu</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .service-btn:active { transform: scale(0.95); }
-    </style>
 </head>
-<body class="bg-slate-900 text-white font-sans flex flex-col min-h-screen">
+<body class="bg-black text-white font-sans flex items-center justify-center min-h-screen p-4">
 
-    <header class="p-6 text-center border-b border-slate-800 bg-slate-900 sticky top-0 z-10">
-        <h1 class="text-2xl font-black text-blue-500 tracking-widest">OTO YIKAMA <span class="text-white text-sm font-light">ANTALYA</span></h1>
-    </header>
-
-    <main class="flex-grow p-5 max-w-lg mx-auto w-full">
-        
-        <div class="text-center my-8">
-            <h2 class="text-xl font-bold mb-2">HANGİ HİZMETTEN FAYDALANMAK İSTERSİNİZ?</h2>
-            <p class="text-slate-400 text-sm">Lütfen aşağıdan bir seçenek belirleyin:</p>
+    <div class="w-full max-w-md bg-gray-900 border border-gray-800 rounded-3xl p-8 shadow-2xl">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-black text-blue-500 tracking-tighter">NET BAKIM</h1>
+            <p class="text-gray-400 text-sm mt-2 font-medium">Antalya Oto Bakım ve Yıkama</p>
         </div>
 
         <div class="space-y-4">
+            <p class="text-center text-gray-300 font-semibold mb-4 italic">Bir hizmet seçerek devam edin:</p>
             
-            <a href="#randevu-formu" onclick="setService('Dış Yıkama')" class="service-btn block p-6 bg-slate-800 border-2 border-slate-700 rounded-2xl hover:border-blue-500 transition-all shadow-lg group">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <span class="block text-blue-400 font-bold text-lg">1. SEÇENEK</span>
-                        <span class="text-2xl font-black">DIŞ YIKAMA</span>
-                    </div>
-                    <i class="fas fa-car-side text-3xl text-slate-600 group-hover:text-blue-500"></i>
-                </div>
+            <a href="https://forms.gle/bGUpnffWbD8PPseP7" target="_blank" class="block w-full py-5 px-6 bg-gray-800 hover:bg-gray-700 border-l-8 border-blue-500 rounded-xl text-xl font-bold transition-all active:scale-95 shadow-lg">
+                1. DIŞ YIKAMA
             </a>
 
-            <a href="#randevu-formu" onclick="setService('İç Yıkama')" class="service-btn block p-6 bg-slate-800 border-2 border-slate-700 rounded-2xl hover:border-blue-500 transition-all shadow-lg group">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <span class="block text-blue-400 font-bold text-lg">2. SEÇENEK</span>
-                        <span class="text-2xl font-black">İÇ YIKAMA</span>
-                    </div>
-                    <i class="fas fa-vacuum text-3xl text-slate-600 group-hover:text-blue-500"></i>
-                </div>
+            <a href="https://forms.gle/bGUpnffWbD8PPseP7" target="_blank" class="block w-full py-5 px-6 bg-gray-800 hover:bg-gray-700 border-l-8 border-blue-400 rounded-xl text-xl font-bold transition-all active:scale-95 shadow-lg">
+                2. İÇ YIKAMA
             </a>
 
-            <a href="#randevu-formu" onclick="setService('İç + Dış Yıkama')" class="service-btn block p-6 bg-blue-600 border-2 border-blue-400 rounded-2xl hover:bg-blue-500 transition-all shadow-xl group">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <span class="block text-white opacity-80 font-bold text-lg">3. SEÇENEK (Önerilen)</span>
-                        <span class="text-2xl font-black">İÇ + DIŞ YIKAMA</span>
-                    </div>
-                    <i class="fas fa-shining text-3xl text-white group-hover:animate-pulse"></i>
-                </div>
+            <a href="https://forms.gle/bGUpnffWbD8PPseP7" target="_blank" class="block w-full py-6 px-6 bg-blue-600 hover:bg-blue-500 rounded-xl text-2xl font-black text-center transition-all active:scale-95 shadow-blue-500/20 shadow-2xl">
+                3. İÇ + DIŞ YIKAMA
             </a>
-
         </div>
 
-        <div id="randevu-formu" class="mt-16 pt-8 border-t border-slate-800">
-            <h3 class="text-center font-bold mb-4">Seçiminizi Tamamlayın</h3>
-            <div class="bg-white rounded-xl overflow-hidden min-h-[600px]">
-                <iframe id="google-form" src="https://docs.google.com/forms/d/e/SİZİN-FORM-ID-BURAYA/viewform?embedded=true" width="100%" height="800" frameborder="0">Yükleniyor…</iframe>
+        <div class="mt-12 text-center">
+            <div class="text-xs text-gray-500 space-y-1">
+                <p>7/24 Randevu Hattı</p>
+                <p>© 2026 Net Bakım - Antalya</p>
             </div>
         </div>
-
-    </main>
-
-    <a href="https://wa.me/905XXXXXXXXXX" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
-        <i class="fab fa-whatsapp text-3xl text-white"></i>
-    </a>
-
-    <script>
-        function setService(name) {
-            console.log("Seçilen hizmet: " + name);
-            // Burada istersen Google Form'a seçilen hizmeti otomatik gönderecek ayar yapabiliriz.
-        }
-    </script>
+    </div>
 
 </body>
 </html>
